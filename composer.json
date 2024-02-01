@@ -1,0 +1,30 @@
+{
+  "name": "ezappslab/laravel-jumpstart",
+  "version": "0.0.1",
+  "description": "Streamlines the development process by providing a pre-configured foundation with essential tools",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Rado Boydev"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Infinity\\Jumpstart\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^10.0",
+    "spatie/laravel-package-tools": "^1.16"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Infinity\\Jumpstart\\LaravelJumpstartServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
+  "minimum-stability": "stable"
+}
