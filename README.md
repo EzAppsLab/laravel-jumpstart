@@ -9,6 +9,34 @@ This is a Laravel starter kit package designed to kickstart your Laravel project
 - **Vue Router**: The official router for Vue.js. Vue Router enables efficient navigation between different views in a Vue application.
 - **VueUse**: A collection of essential Vue composition utilities. VueUse provides a set of composable functions for common tasks such as working with browser APIs, handling reactive data, and more.
 
+## Installation
+
+To get started with the package, follow these simple steps
+
+1. Install the package using Composer:
+
+   ```composer require --dev ezappslab/laravel-jumpstart```
+
+2. Run the package installation command:
+   
+   ```php artisan jumpstart:install```
+
+## Usage
+
+To use this package in your Laravel application, follow these steps:
+
+1. Install the required npm packages:
+
+   ```npm install```
+
+2. Compile your assets with one of the following commands:
+
+   ```npm run dev```
+   or
+   ```npm run build```
+
+That's it! You are now ready to start using Jumpstart in your Laravel project.
+
 ## Contribute
 
 Contributions to this project are welcome!
