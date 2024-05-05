@@ -19,7 +19,7 @@ class LaravelJumpstartServiceProvider extends PackageServiceProvider
         'build-only' => 'vite build',
         'type-check' => 'vue-tsc --build --force',
         'lint' => 'eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore',
-        'format' => 'prettier --write ./resources/ts/'
+        'format' => 'prettier --write ./resources/ts/',
     ];
 
     const NPM_DEPENDENCIES = [
@@ -65,7 +65,7 @@ class LaravelJumpstartServiceProvider extends PackageServiceProvider
                         $this->deleteOldFiles();
 
                         $command->comment('Copying new files...');
-                        File::copyDirectory(dirname(__DIR__) . '/stubs', base_path());
+                        File::copyDirectory(dirname(__DIR__).'/stubs', base_path());
 
                         $command->comment('Adding dependencies');
                         $this->modifyNodePackage();
@@ -75,8 +75,6 @@ class LaravelJumpstartServiceProvider extends PackageServiceProvider
 
     /**
      * Remove the existing files that are no longer needed.
-     *
-     * @return void
      */
     protected function deleteOldFiles(): void
     {
@@ -87,8 +85,6 @@ class LaravelJumpstartServiceProvider extends PackageServiceProvider
 
     /**
      * Adjust the node dependencies.
-     *
-     * @return void
      */
     protected function modifyNodePackage(): void
     {
