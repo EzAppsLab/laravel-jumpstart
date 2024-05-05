@@ -15,11 +15,15 @@ To get started with the package, follow these simple steps
 
 1. Install the package using Composer:
 
-   ```composer require --dev ezappslab/laravel-jumpstart```
+```shell
+composer require --dev ezappslab/laravel-jumpstart
+```
 
 2. Run the package installation command:
    
-   ```php artisan jumpstart:install```
+```shell
+php artisan jumpstart:install
+```
 
 ## Usage
 
@@ -27,13 +31,21 @@ To use this package in your Laravel application, follow these steps:
 
 1. Install the required npm packages:
 
-   ```npm install```
+```shell
+npm install
+```
 
 2. Compile your assets with one of the following commands:
 
-   ```npm run dev```
-   or
-   ```npm run build```
+```shell
+npm run dev
+```
+
+or
+
+```shell
+npm run build
+```
 
 That's it! You are now ready to start using Jumpstart in your Laravel project.
 
