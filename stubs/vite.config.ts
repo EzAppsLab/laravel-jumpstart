@@ -1,6 +1,6 @@
 import {fileURLToPath, URL} from 'node:url'
 import {defineConfig} from 'vite'
-import laravel from 'laravel-vite-plugin';
+import laravel from 'laravel-vite-plugin'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
@@ -28,7 +28,7 @@ export default defineConfig({
         }
     },
     server: {
-        host: process.env.VITE_APP_HOST || '127.0.0.1',
+        host: import.meta.env.VITE_APP_HOST || '127.0.0.1',
         watch: {
             usePolling: true,
             ignored: [
